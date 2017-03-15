@@ -1,0 +1,26 @@
+.init-checkbox {
+    .checkbox {
+        &-block {
+            .checkbox {
+                background-image:    url('@{images-upload}/checks.png');
+                background-repeat:   no-repeat;
+                background-position: -35px 0;
+                width:               22px;
+                height:              22px;
+                position:            relative;
+                overflow:            hidden;
+                display:             inline-block;
+                vertical-align:      middle;
+
+                &.checked {
+                    background-position: 0 0;
+                }
+
+                input {
+                    position: absolute;
+                    left:     -100px;
+                }
+            }
+        }
+    }
+}

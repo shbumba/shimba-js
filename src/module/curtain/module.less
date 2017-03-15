@@ -1,0 +1,41 @@
+.curtain img {
+    position: absolute;
+}
+
+.curtain .first img {
+    top:  0;
+    left: 0;
+}
+
+.curtain .last img {
+    top:   0;
+    right: 0;
+}
+
+.curtain .first {
+    position: relative;
+}
+
+.curtain .last {
+    position: relative;
+}
+
+.curtain .first:before,
+.curtain .last:before {
+    content:  '';
+    display:  table;
+    position: absolute;
+    width:    2px;
+    height:   100%;
+
+    top:      0;
+    z-index:  100;
+}
+
+.curtain .first:before {
+    right: 0;
+}
+
+.curtain .last:before {
+    left: 0;
+}

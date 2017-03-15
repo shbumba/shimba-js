@@ -1,0 +1,69 @@
+.main-nav ul li,
+.main-nav ul li a {
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition:    all 0.4s ease-in-out 0s;
+    -ms-transition:     all 0.4s ease-in-out 0s;
+    -o-transition:      all 0.4s ease-in-out 0s;
+    transition:         all 0.4s ease-in-out 0s;
+}
+
+.main-nav > ul > li {
+    margin-left: 32px;
+}
+
+.main-nav > ul > li > a {
+    padding:          8px;
+
+    background-color: #ffffff;
+    border:           2px solid #ffffff;
+
+    color:            #333333;
+    text-decoration:  none;
+    text-align:       center;
+    font-size:        16px;
+    letter-spacing:   0.05em;
+}
+
+.main-nav > ul > li:hover > a {
+    border-color: #2b2624;
+}
+
+.main-nav > ul > li.active > a {
+    background:   #433d3f;
+
+    border-color: #000000;
+    color:        #ffffff;
+}
+
+.main-nav > ul > li > ul {
+    padding:          5px;
+    margin-top:       0;
+
+    background-color: #2b2628;
+    border:           0 solid #2b2628;
+}
+
+.main-nav > ul > li > ul > li {
+    padding: 2px;
+}
+
+.main-nav > ul > li > ul > li > a {
+    padding:         2px;
+
+    color:           #ffffff;
+    font-weight:     400;
+    text-decoration: none;
+}
+
+.main-nav > ul > li > ul > li li > a {
+    color:           #ffffff;
+    text-decoration: none;
+}
+
+.main-nav > ul > li > ul > li.active > a,
+.main-nav > ul > li > ul > li:hover > a,
+.main-nav > ul > li > ul > li li.active > a,
+.main-nav > ul > li > ul > li li:hover > a {
+    color:       #ffffff;
+    font-weight: 600;
+}

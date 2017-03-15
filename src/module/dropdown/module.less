@@ -1,0 +1,52 @@
+.dropdown-block {
+    display:       table;
+    box-sizing:    border-box;
+    position:      relative;
+    border-radius: 0;
+    padding:       10px 7px;
+    width:         100%;
+}
+
+.dropdown-block.active {
+    z-index: 1000;
+}
+
+.dropdown-block .dropdown-list {
+    position:   absolute;
+    top:        40px;
+    width:      100%;
+    box-sizing: border-box;
+    left:       0;
+    z-index:    900;
+    padding:    5px 10px;
+}
+
+.dropdown-block .dropdown-list .dropdown-item {
+    cursor:  pointer;
+    padding: 10px 5px;
+}
+
+.dropdown-block .dropdown-name {
+    cursor:  pointer;
+    display: table;
+    width:   100%;
+}
+
+.dropdown-block .dropdown-name .name {
+    display:      table;
+    float:        left;
+    white-space:  nowrap;
+    margin-right: 10px;
+}
+
+.dd-block {
+    padding: 0 5px 5px 5px;
+}
+
+.dd-hList {
+    display: none;
+}
+
+.dd-hList.active {
+    display: block;
+}

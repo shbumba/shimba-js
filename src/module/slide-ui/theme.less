@@ -1,0 +1,52 @@
+.slide-ui {
+    font-size:   16px;
+    text-align:  center;
+    color:       #ffffff;
+
+    &__control {
+        height:        36px;
+        background:    #99d6f3;
+        border:        none;
+        padding-right: 4px;
+        margin: 0;
+    }
+
+    &__fill {
+        background: #0099e0;
+        box-shadow: none;
+    }
+
+    &__handle {
+        background: #fff;
+        border:     none;
+        width:      4px;
+        right:      -4px;
+        top:        0;
+    }
+
+    &__handle-info {
+        position: absolute;
+        top: 100%;
+        margin: 4px auto 0;
+        left: -13px;
+        font-size: 16px;
+        text-align: center;
+        padding-top: 6px;
+        color: #0099e0;
+
+        &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 0;
+            height: 0;
+            margin: 0 auto;
+            content: '';
+            border-style: solid;
+            border-width: 0 5px 6px 5px;
+            border-color: transparent transparent #0099e0 transparent;
+
+        }
+    }
+}

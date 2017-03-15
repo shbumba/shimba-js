@@ -1,0 +1,124 @@
+.sh-popover {
+    position:      absolute;
+    top:           0;
+    left:          0;
+
+    width:         auto;
+    min-width:     unset;
+    max-width:     unset;
+    min-height:    unset;
+    max-height:    unset;
+
+    display:       none;
+    visibility: hidden;
+    z-index: -1;
+
+    &:after {
+        position: absolute;
+        display:  block;
+        content:  '';
+    }
+
+    &__block {
+        display: table;
+    }
+
+    &__item {
+        cursor: pointer;
+    }
+
+    &.is-clone {
+        display: block;
+    }
+
+    &.is-active {
+        z-index: 1000;
+        visibility: visible;
+    }
+
+    &.is-hide {
+        z-index: -1;
+        visibility: hidden;
+    }
+
+    &-- {
+        &top {
+            margin-top: -8px;
+            bottom: 100%;
+            left: 0;
+            text-align: center;
+
+            &-left {
+                bottom: 100%;
+                left: 0;
+                text-align: left;
+            }
+
+            &-right {
+                bottom: 100%;
+                left: 0;
+                text-align: right;
+            }
+        }
+
+        &bottom {
+            top: 100%;
+            left: 0;
+            text-align: center;
+            margin-top: 8px;
+
+            &-left {
+                top: 100%;
+                left: 0;
+                text-align: left;
+            }
+
+            &-right {
+                top: 100%;
+                left: 0;
+                text-align: right;
+            }
+        }
+
+        &left {
+            right: 100%;
+            top: 0;
+            bottom: 0;
+            text-align: right;
+            margin-left: -8px;
+
+            &-top {
+                right: 100%;
+                top: 0;
+                text-align: right;
+            }
+
+            &-bottom {
+                right: 100%;
+                bottom: 0;
+                text-align: right;
+            }
+        }
+
+        &right {
+            left: 100%;
+            text-align: left;
+            top: 0;
+            bottom: 0;
+            margin-left: 8px;
+
+            &-top {
+                left: 100%;
+                top: 0;
+                text-align: left;
+            }
+
+            &-bottom {
+                left: 100%;
+                bottom: 0;
+                text-align: left;
+            }
+        }
+    }
+}
+

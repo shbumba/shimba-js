@@ -1,0 +1,41 @@
+{
+  "name": "shimba-js",
+  "version": "1.0.0",
+  "description": "Shimba JS Micro framework",
+  "keywords": [
+    "js",
+    "framework",
+    "web"
+  ],
+  "author": "Vitaly Fomin",
+  "main": "./src/shimba.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitaly63/shimba-js"
+  },
+  "bugs": {
+    "url": "https://github.com/vitaly63/shimba-js/issues"
+  },
+  "license": "MIT",
+  "files": [
+    "src",
+    "dist",
+    "fonts",
+    "grunt",
+    "src/*.js",
+    "src/module/*.js",
+    "src/module/**/*.js"
+  ],
+  "jspm": {
+    "main": "src",
+    "shim": {
+      "js/bundle": {
+        "deps": "jquery",
+        "exports": "$"
+      }
+    },
+    "files": [
+      "js"
+    ]
+  }
+}
